@@ -9,7 +9,7 @@ public class ReadPropFiles
 
 	public static String readconfig(String key) throws Exception
 	{
-		FileReader fr = new FileReader("./target/config.properties");
+		FileReader fr = new FileReader("./TestData/config.properties");
 		Properties prop = new Properties();
 		prop.load(fr);
 		return prop.get(key).toString();
@@ -17,7 +17,7 @@ public class ReadPropFiles
 	
 	public static String readelement(String key) throws Exception
 	{
-		FileReader fr = new FileReader("./target/element.properties");
+		FileReader fr = new FileReader("./TestData/element.properties");
 		Properties prop = new Properties();
 		prop.load(fr);
 		return prop.get(key).toString();
@@ -25,7 +25,7 @@ public class ReadPropFiles
 	
 	public static String readdata(String key) throws Exception
 	{
-		FileReader fr = new FileReader("./target/data.properties");
+		FileReader fr = new FileReader("./TestData/data.properties");
 		Properties prop = new Properties();
 		prop.load(fr);
 		return prop.get(key).toString();
